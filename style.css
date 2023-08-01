@@ -1,39 +1,12 @@
 
-h1 {
-  font-size: 50px;
-  line-height: 64px;
-  color: #222;
-}
-
-h2 {
-  font-size: 46px;
-  line-height: 54px;
-  color: black;
-}
-
-h4 {
-  font-size: 20px;
-  color: black;
-}
-
-h6 {
-  font-weight: 700;
-  font-size: 12px;
-}
-
-p {
-  font-size: 16px;
-  color: lightgreen;
-  margin: 15px 0 20px 0;
-}
-
 body {
-  width: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
 /* Start of Header */
 
-#header{
+#header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -46,48 +19,46 @@ body {
   left: 0;
 }
 
-navbar {
+#navbar {
   display: flex;
   align-items: center;
   position: relative;
 }
 
-navbar li{
-    list-style: none;
-    padding : 0 20px;
-    position: relative;
+#navbar li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
 }
 
-navbar li a {
+#navbar li a {
   text-decoration: none;
   font-size: 16px;
   font-weight: 600;
   color: black;
-  transition: 0.3s ease
+  transition: 0.3s ease;
 }
 
-navbar li a:hover,
-navbar li a.active{
+#navbar li a:hover,
+#navbar li a.active {
   color: pink;
-
 }
 
-navbar li a.active:after,
-navbar li a:hover::after{
-    content: "";
-    width: 30%;
-    height: 2px;
-    background: black;
-    position: absolute;
-    bottom: -4px;
-    left: 20px;
+#navbar li a.active:after,
+#navbar li a:hover::after {
+  content: "";
+  width: 30%;
+  height: 2px;
+  background: black;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
 }
 
 /* Home Page */
-hero{
+#hero {
   background-image: url("newBackgroundImage.jpg");
   height: 90vh;
-  width: 100%;
   background-size: cover;
   background-position: top 25% right 0%;
   padding: 0 80px;
@@ -96,60 +67,61 @@ hero{
   justify-content: center;
 }
 
-hero h4{
+#hero h4 {
   padding-bottom: 15px;
 }
 
-hero button{
- border: 20px;
- padding: 14px 80px 14px 65px;
-
+#hero button {
+  border: 20px;
+  padding: 14px 80px 14px 65px;
 }
 
 /* Shop */
-
-shop{
-text-align: center;
+#shop {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1600px; /* Increase the max-width to fit 5 items in a row */
+  margin: 0 auto;
+  justify-content: space-between;
 }
 
+.pro-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
-shop .pro{
-  width: 10%;
-  min-width: 250px;
+.pro {
+  flex-basis: calc(20% - 20px); /* Set each item to occupy 20% width with some margin in between */
+  max-width: 250px; /* Optional: Set a maximum width for the items */
+  margin: 10px;
   padding: 10px 12px;
   border: 1px solid black;
   border-radius: 25px;
   cursor: pointer;
   box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
   transition: 0.2s ease;
+  text-align: center;
   position: relative;
 }
-
-shop .pro-container{
-display: flex;
-flex-wrap: wrap;
-}
-
-shop .pro:hover{
-  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
-}
-
-shop .pro img{
+.pro img {
   width: 100%;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
-shop .pro .type{
-  text-align: center;
+.pro .type h5 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 10px;
 }
 
-shop .pro .type h4{
-  font-size: 20px;
+.pro .type h4 {
+  font-size: 24px;
   font-weight: 700;
   color: black;
 }
 
-shop .pro .cart{
+.pro .cart {
   width: 40px;
   height: 40px;
   line-height: 40px;
@@ -158,10 +130,15 @@ shop .pro .cart{
   font-weight: 500;
   color: aqua;
   position: absolute;
-  bottom: 20px;
+  bottom: 10px;
   right: 10px;
+
+  /* Center the button within the background color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Shop Page */
-
-/*  */
+.pro:hover {
+  transform: translateY(-5px);
+}
