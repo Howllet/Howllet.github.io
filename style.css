@@ -46,19 +46,19 @@ body {
   left: 0;
 }
 
-#navbar {
+navbar {
   display: flex;
   align-items: center;
   position: relative;
 }
 
-#navbar li{
+navbar li{
     list-style: none;
     padding : 0 20px;
     position: relative;
 }
 
-#navbar li a {
+navbar li a {
   text-decoration: none;
   font-size: 16px;
   font-weight: 600;
@@ -66,14 +66,14 @@ body {
   transition: 0.3s ease
 }
 
-#navbar li a:hover,
-#navbar li a.active{
+navbar li a:hover,
+navbar li a.active{
   color: pink;
 
 }
 
-#navbar li a.active:after,
-#navbar li a:hover::after{
+navbar li a.active:after,
+navbar li a:hover::after{
     content: "";
     width: 30%;
     height: 2px;
@@ -84,7 +84,7 @@ body {
 }
 
 /* Home Page */
-#hero{
+hero{
   background-image: url("newBackgroundImage.jpg");
   height: 90vh;
   width: 100%;
@@ -96,11 +96,11 @@ body {
   justify-content: center;
 }
 
-#hero h4{
+hero h4{
   padding-bottom: 15px;
 }
 
-#hero button{
+hero button{
  border: 20px;
  padding: 14px 80px 14px 65px;
 
@@ -108,12 +108,12 @@ body {
 
 /* Shop */
 
-#shop{
+shop{
 text-align: center;
 }
 
 
-#shop .pro{
+shop .pro{
   width: 10%;
   min-width: 250px;
   padding: 10px 12px;
@@ -125,31 +125,31 @@ text-align: center;
   position: relative;
 }
 
-#shop .pro-container{
+shop .pro-container{
 display: flex;
 flex-wrap: wrap;
 }
 
-#shop .pro:hover{
+shop .pro:hover{
   box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
 }
 
-#shop .pro img{
+shop .pro img{
   width: 100%;
   border-radius: 20px;
 }
 
-#shop .pro .type{
+shop .pro .type{
   text-align: center;
 }
 
-#shop .pro .type h4{
+shop .pro .type h4{
   font-size: 20px;
   font-weight: 700;
   color: black;
 }
 
-#shop .pro .cart{
+shop .pro .cart{
   width: 40px;
   height: 40px;
   line-height: 40px;
