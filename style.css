@@ -6,7 +6,7 @@ body {
 
 /* Start of Header */
 
-header {
+#header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -19,19 +19,19 @@ header {
   left: 0;
 }
 
-navbar {
+#navbar {
   display: flex;
   align-items: center;
   position: relative;
 }
 
-navbar li {
+#navbar li {
   list-style: none;
   padding: 0 20px;
   position: relative;
 }
 
-navbar li a {
+#navbar li a {
   text-decoration: none;
   font-size: 16px;
   font-weight: 600;
@@ -39,13 +39,13 @@ navbar li a {
   transition: 0.3s ease;
 }
 
-navbar li a:hover,
-navbar li a.active {
+#navbar li a:hover,
+#navbar li a.active {
   color: pink;
 }
 
-navbar li a.active:after,
-navbar li a:hover::after {
+#navbar li a.active:after,
+#navbar li a:hover::after {
   content: "";
   width: 30%;
   height: 2px;
@@ -56,7 +56,7 @@ navbar li a:hover::after {
 }
 
 /* Home Page */
-hero {
+#hero {
   background-image: url("newBackgroundImage.jpg");
   height: 90vh;
   background-size: cover;
@@ -67,17 +67,17 @@ hero {
   justify-content: center;
 }
 
-hero h4 {
+#hero h4 {
   padding-bottom: 15px;
 }
 
-hero button {
+#hero button {
   border: 20px;
   padding: 14px 80px 14px 65px;
 }
 
 /* Shop */
-shop {
+#shop {
   display: flex;
   flex-wrap: wrap;
   max-width: 1600px; /* Increase the max-width to fit 5 items in a row */
@@ -85,13 +85,13 @@ shop {
   justify-content: space-between;
 }
 
-pro-container {
+.pro-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-pro {
+.pro {
   flex-basis: calc(20% - 20px); /* Set each item to occupy 20% width with some margin in between */
   max-width: 250px; /* Optional: Set a maximum width for the items */
   margin: 10px;
@@ -104,24 +104,24 @@ pro {
   text-align: center;
   position: relative;
 }
-pro img {
+.pro img {
   width: 100%;
   border-radius: 10px;
 }
 
-pro .type h5 {
+.pro .type h5 {
   font-size: 18px;
   font-weight: 600;
   margin-top: 10px;
 }
 
-pro .type h4 {
+.pro .type h4 {
   font-size: 24px;
   font-weight: 700;
   color: black;
 }
 
-pro .cart {
+.pro .cart {
   width: 40px;
   height: 40px;
   line-height: 40px;
@@ -139,6 +139,6 @@ pro .cart {
   justify-content: center;
 }
 
-pro:hover {
+.pro:hover {
   transform: translateY(-5px);
 }
